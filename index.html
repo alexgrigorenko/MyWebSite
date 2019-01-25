@@ -103,6 +103,66 @@
         </div>
       </div>
       
+      <!-- RESUME -->
+
+      <div id="resume" class="collapse">
+        <div class="card card-body bg-success text-white py-5">
+          <h2>My Resume</h2>
+          <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, ut!</p>
+        </div>
+
+        <div class="card card-body py-5">
+            <h3>Education</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque similique saepe inventore rem vitae esse.</p>
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Bachelor's Degree</h4>
+                  <p class="card-text">National Technical University of Ukraine "Kyiv Polytechnic Institute", Kyiv (Ukraine)</p>
+                  <p class="p-2 mb-3 bg-dark text-white">
+                    Micro- and Nano-electronics
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <h6 class="text-muted">Dates: 2012 - 2016</h6>
+                </div>
+              </div>
+  
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Master's Degree</h4>
+                  <p class="card-text">National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute", Kyiv (Ukraine)</p>
+                  <p class="p-2 mb-3 bg-dark text-white">
+                      Micro- and Nano-System Technology
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <h6 class="text-muted">Dates: 2016 - 2018</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="card card-body py-5">
+          <h3>Where Have I Worked?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque similique saepe inventore rem vitae esse.</p>
+          <div class="card-deck">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">V.E. Lashkaryov Institute of Semiconductor Physics NAS of Ukraine</h4>
+                <p class="card-text">Laboratory modulation-polarization spectroscopy (MPS)</p>
+                <p class="p-2 mb-3 bg-dark text-white">
+                  Researcher
+                </p>
+              </div>
+              <div class="card-footer">
+                <h6 class="text-muted">Dates: 2017 - 2018</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- FOOTER -->
 
       <footer id="main-footer" class="p-5 bg-dark text-white">
@@ -134,8 +194,14 @@
     ></script>
 
     <script>
-      // Get the current year for the copyright
-      $('#year').text(new Date().getFullYear());
+      $('.port-item').click(function () {
+        $('.collapse').collapse('hide');
+      });
+
+      $(document).on('click', '[data-toggle="lightbox"]', function (e) {
+        e.preventDefault();
+        $(this).ekkoLightbox();
+      });
     </script>
   </body>
 </html>
