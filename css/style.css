@@ -25,6 +25,10 @@
   background: #000;
 }
 
+.a:hover {
+  text-decoration: none;
+}
+
 @media (min-width: 1199px) {
   .port-item {
     padding: 3em !important;
