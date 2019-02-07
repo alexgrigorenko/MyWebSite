@@ -1,7 +1,3 @@
-body {
-  font-family: 'Fahkwang', sans-serif;
-}
-
 #main-header img {
   width: 100%;
   height: 100%;
@@ -33,9 +29,6 @@ body {
   text-decoration: none;
 }
 
-.contact-social span {
-  font-size: 1.5rem;
-}
 @media (min-width: 1199px) {
   .port-item {
     padding: 3em !important;
